@@ -810,7 +810,6 @@ int generate_crash_report(pid_t pid, unsigned sig, unsigned uid, unsigned gid)
     if (!milist)
     {
         LOG("crash_handler:  failed to load memory maps\n");
-        return 1;
     }
 
     // Sieze main thead first
